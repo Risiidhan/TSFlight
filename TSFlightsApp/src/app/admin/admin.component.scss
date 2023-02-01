@@ -1,0 +1,88 @@
+.admin_panel {
+    background-color: rgba(255, 255, 255, 0.445);  
+    backdrop-filter: blur(5px);
+    font-size: 1.1em;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 10px;
+    // background-color:white;
+    border: 1px solid grey;
+    box-shadow: 2px 2px 2px;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: flex-start;
+    input { width: 200px; border: 1px solid grey;}
+    width: 90%;
+    height: 70vh;
+    padding-left: 30px;
+    border-radius: 5px;
+    span{font-size: 0.8em; margin-top: 10px; font-weight: bold;}
+    .non_stop_box{
+        display: flex;
+        flex-direction: row;
+    }
+    button{ margin-top: 30px; border-radius: 15px; border: none; background-color: rgb(76, 161, 76); width: 20%;  height: 35px;}
+}
+
+.container{
+    display: flex;
+    flex-direction: row;
+}
+
+
+.inp{
+    height: 25px;
+    margin-bottom: 10px;
+}
+
+.editPanel {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 10px;
+    background-color: rgb(159, 247, 232);
+    border: 1px solid grey;
+    box-shadow: 2px 2px 2px;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: flex-start;
+    width: 90%;
+ 
+    
+    @media screen and (max-width: 500px){
+        width: 90%;
+    }
+    padding: 5px;
+    border-radius: 5px;
+
+    .flightTable{
+        font-size: 1em;
+        @media screen and (max-width: 719px){
+            input{max-width: 20px};
+          }
+        @media screen and (max-width: 500px){
+          input{max-width: 20px};
+        }
+    }
+
+    .tHead{
+        font-weight: bold;
+    }
+
+    input{width: 80px};
+    font-size: 14px;
+
+    button.update{
+        background-color: rgb(75, 143, 206);
+        border-radius: 15px; 
+        border: none; 
+        width: 55px;
+    }
+
+    button.delete{
+        background-color: rgb(206, 96, 96);
+        border-radius: 15px; 
+        border: none; 
+        width: 55px;
+    }
+
+}
